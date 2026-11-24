@@ -1,21 +1,21 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f2efe7" />
-  <meta name="description" content="Stamp Lab by London Berry. An independent personal brand and reputation consultancy for people who have something to say." />
-  <meta property="og:title" content="Stamp Lab — Leave Your Mark" />
-  <meta property="og:description" content="Personal brand strategy, image direction, reputation and writing. For people who have something to say." />
-  <meta property="og:type" content="website" />
-  <title>Stamp Lab — Personal Brand & Reputation Strategy by London Berry</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#f2efe7" name="theme-color"/>
+<meta content="Stamp by London Berry. An independent personal brand and reputation consultancy for people who have something to say." name="description"/>
+<meta content="Stamp — Be Known for Something" property="og:title"/>
+<meta content="Personal brand strategy, image direction, reputation and writing. For people who have something to say." property="og:description"/>
+<meta content="website" property="og:type"/>
+<title>Stamp — Personal Brand &amp; Reputation Strategy by London Berry</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=DM+Mono:wght@400;500&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
+<style>
     :root {
-      --paper:#f2efe7; --paper-light:#faf8f1; --ink:#242521; --red:#a3342b;
-      --red-dark:#782820; --muted:#67685e; --line:#c7c3b8; --sand:#dfd7c7; --blush:#e9ddd2;
+      --paper:#faf9f5; --paper-light:#fffefa; --ink:#1d2233; --red:#c62836;
+      --red-dark:#9b1f29; --muted:#6b7180; --line:#d9d5cc; --sand:#f1eee6; --blush:#fae9e9;
       --serif:'Playfair Display',Georgia,serif; --sans:'DM Sans',Arial,sans-serif; --mono:'DM Mono',monospace;
     }
     *,*:before,*:after{box-sizing:border-box}
@@ -36,8 +36,7 @@
     header{position:sticky;top:0;z-index:100;background:rgba(242,239,231,.96);border-bottom:1px solid var(--ink);backdrop-filter:blur(13px)}
     .nav{height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px}
     .brand-lockup{display:inline-flex;align-items:center;gap:14px;white-space:nowrap}
-    .mark{width:39px;height:39px;border:2px solid var(--red);color:var(--red);display:grid;place-items:center;transform:rotate(-11deg);font:800 12px var(--sans);letter-spacing:-.08em;position:relative}
-    .mark:before{content:'';position:absolute;inset:3px;border:1px solid var(--red);opacity:.65}
+    .mark{width:48px;height:48px;display:inline-grid;place-items:center;flex:none;transform:rotate(-8deg)} .mark svg{width:100%;height:100%;display:block;filter:drop-shadow(0 1px 0 rgba(0,0,0,.08))}
     .brandname{font:800 26px/1 var(--sans);letter-spacing:-.085em;text-transform:uppercase}
     .brandname b{color:var(--red)}
     .brand-sub{font:500 9px/1.25 var(--mono);color:var(--muted);letter-spacing:.06em;text-transform:uppercase;max-width:125px}
@@ -59,18 +58,18 @@
     .hero-footer p{font:400 clamp(18px,1.65vw,24px)/1.58 var(--serif);letter-spacing:-.025em;max-width:560px;margin:0}
     .circle-arrow{border:1px solid var(--ink);width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:26px;transition:transform .3s,background .3s}
     .circle-arrow:hover{transform:rotate(45deg);background:var(--blush)}
-    .hero-art{background:var(--red);color:var(--paper-light);border:1px solid #7e2923;min-height:610px;padding:25px;display:flex;flex-direction:column;position:relative;overflow:hidden;isolation:isolate}
-    .hero-art:before{content:'';position:absolute;left:50%;top:46%;transform:translate(-50%,-50%) rotate(-13deg);width:85%;aspect-ratio:1;border:2px solid rgba(255,250,239,.6);border-radius:50%;box-shadow:0 0 0 25px var(--red),0 0 0 27px rgba(255,250,239,.33),0 0 0 70px var(--red),0 0 0 72px rgba(255,250,239,.2);z-index:-1}
+    .hero-art{background:linear-gradient(145deg,#10172b,#1a2340 60%,#222f56);color:var(--paper-light);border:1px solid rgba(29,34,51,.35);min-height:610px;padding:25px;display:flex;flex-direction:column;position:relative;overflow:hidden;isolation:isolate;box-shadow:0 18px 50px rgba(29,34,51,.16)}
+    .hero-art:before{content:'';position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:86%;aspect-ratio:1;border:2px solid rgba(248,213,138,.7);border-radius:50%;box-shadow:0 0 0 22px rgba(255,255,255,.02),0 0 0 24px rgba(248,213,138,.22),0 0 0 66px rgba(255,255,255,.02),0 0 0 68px rgba(248,213,138,.14);z-index:-1}
     .art-head,.art-foot{display:flex;align-items:start;justify-content:space-between;gap:10px}
     .art-head{font:500 10px/1.45 var(--mono);letter-spacing:.08em;text-transform:uppercase}
     .art-middle{position:relative;display:flex;flex:1;align-items:center;justify-content:center;flex-direction:column;text-align:center}
-    .art-middle strong{font:500 clamp(105px,10.2vw,164px)/.74 var(--serif);letter-spacing:-.12em;transform:rotate(-10deg);display:block;text-shadow:3px 3px 0 rgba(0,0,0,.1)}
-    .art-middle em{display:block;font:italic 400 clamp(30px,4vw,50px)/1.15 var(--serif);margin-top:33px;letter-spacing:-.055em;transform:rotate(-10deg)}
+    .art-middle strong{font:500 clamp(118px,11vw,176px)/.74 var(--serif);letter-spacing:-.05em;transform:rotate(-8deg);display:block;color:#f7d48d;text-shadow:0 3px 0 rgba(0,0,0,.08)}
+    .art-middle em{display:block;font:italic 400 clamp(28px,3.3vw,44px)/1.15 var(--serif);margin-top:28px;letter-spacing:-.04em;transform:rotate(-6deg);color:#fff8ef}
     .art-foot{border-top:1px solid rgba(255,255,255,.64);padding-top:18px;align-items:end}
     .art-foot span{font:500 10px/1.5 var(--mono);text-transform:uppercase;letter-spacing:.1em}.art-foot b{font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase}
     .ticker{background:var(--ink);color:var(--paper);overflow:hidden;padding:17px 0;white-space:nowrap}
     .ticker-roll{display:flex;align-items:center;gap:28px;width:max-content;animation:marquee 32s linear infinite}
-    .ticker span{font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase}.ticker i{font:italic 24px var(--serif);color:#d9968e}
+    .ticker span{font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase}.ticker i{font:italic 24px var(--serif);color:#f09b97}
     @keyframes marquee{to{transform:translateX(-50%)}}
     .section{padding:clamp(82px,10vw,145px) 0}
     .philosophy-body{display:grid;grid-template-columns:1.13fr .87fr;gap:clamp(35px,10vw,155px);padding-top:clamp(55px,7vw,96px);align-items:end}
@@ -92,7 +91,7 @@
     .work-summary{display:grid;grid-template-columns:1fr 330px;gap:50px;align-items:end;margin:62px 0 52px}
     .work-summary p{color:var(--muted);font:400 14px/1.7 var(--sans);margin:0}
     .work-layout{display:grid;grid-template-columns:1.06fr .94fr;border:1px solid var(--ink);background:var(--paper-light)}
-    .work-art{min-height:520px;background:var(--red);position:relative;overflow:hidden;padding:26px;color:var(--paper-light);display:flex;flex-direction:column;justify-content:space-between;isolation:isolate}
+    .work-art{min-height:520px;background:linear-gradient(145deg,#10172b,#1b2541 62%,#25335e);position:relative;overflow:hidden;padding:26px;color:var(--paper-light);display:flex;flex-direction:column;justify-content:space-between;isolation:isolate}
     .work-art:before{content:'';position:absolute;width:76%;aspect-ratio:1;border:1px solid rgba(255,255,255,.48);border-radius:50%;left:10%;top:14%;box-shadow:0 0 0 31px var(--red),0 0 0 33px rgba(255,255,255,.35),0 0 0 67px var(--red),0 0 0 69px rgba(255,255,255,.25);z-index:-1}
     .work-art .top,.work-art .bottom{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.12em;display:flex;justify-content:space-between;gap:15px}
     .work-art .word{font:italic 400 clamp(75px,8vw,122px)/.96 var(--serif);letter-spacing:-.085em;text-align:center;transform:rotate(-9deg)}
@@ -130,7 +129,7 @@
     .about-poster{aspect-ratio:.88;background:var(--ink);color:var(--paper);padding:26px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;isolation:isolate}
     .about-poster:before{content:'';position:absolute;width:80%;aspect-ratio:1;border:2px solid #6e6b61;border-radius:50%;top:15%;left:8%;transform:rotate(14deg);box-shadow:0 0 0 28px var(--ink),0 0 0 30px #54544d;z-index:-1}
     .about-poster .over{font:500 10px var(--mono);letter-spacing:.1em;text-transform:uppercase}
-    .about-poster strong{font:italic 400 clamp(115px,15vw,224px)/.8 var(--serif);letter-spacing:-.16em;color:#d2665b;align-self:center;transform:rotate(-11deg);padding-right:.17em}
+    .about-poster strong{font:italic 400 clamp(115px,15vw,224px)/.8 var(--serif);letter-spacing:-.16em;color:#e44750;align-self:center;transform:rotate(-11deg);padding-right:.17em}
     .about-poster .under{font:500 10px var(--mono);letter-spacing:.1em;text-transform:uppercase;border-top:1px solid #67675f;padding-top:17px}
     .about h2{font:400 clamp(50px,6.4vw,90px)/1.13 var(--serif);letter-spacing:-.07em;margin:0 0 33px}
     .about h2 em{color:var(--red)}
@@ -159,156 +158,166 @@
     @media(max-width:670px){html{scroll-padding-top:69px}.nav{height:69px}.brandname{font-size:24px}.mark{width:34px;height:34px}.menu-toggle{display:block}.links{display:none;position:fixed;top:69px;left:0;right:0;background:var(--paper);padding:27px 24px 37px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--ink);box-shadow:0 17px 20px rgba(0,0,0,.07)}.links.open{display:flex}.links a{font-size:13px}.hero{padding:54px 0 36px}.hero h1{font-size:clamp(71px,16.5vw,113px);margin:57px 0}.hero-art{min-height:420px}.art-middle strong{font-size:130px}.art-middle em{font-size:38px}.hero-footer p{font-size:19px}.section{padding:80px 0}.section-side{display:none}h2.display{font-size:clamp(54px,11.9vw,78px)}.expertise-lead,.work-summary,.method-head,.packages-intro{margin:50px 0 42px}.competencies{grid-template-columns:1fr}.competency{min-height:260px}.work-art .word{font-size:clamp(67px,12vw,102px)}.work-text{padding:38px}.work-text h3{font-size:45px}.method-steps{grid-template-columns:1fr}.step,.step+.step{min-height:210px;border-right:none;border-bottom:1px solid #aaa599;padding:19px 0 20px}.step h3{margin:24px 0 8px}.step:last-child{border-bottom:none}.package h3{font-size:clamp(42px,10vw,54px)}.contact h2{font-size:clamp(64px,12.2vw,95px)}.contact-button{width:100%;gap:14px}.contact-layout{margin-bottom:70px}.footer{align-items:flex-start;flex-direction:column}.footer .footlinks{gap:15px 23px}}
     @media(max-width:400px){.wrap{width:calc(100% - 36px)}.hero h1{font-size:clamp(67px,17vw,80px)}.hero-art{min-height:390px}.art-middle strong{font-size:119px}.contact h2{font-size:61px}.about-facts{grid-template-columns:1fr}.price{font-size:37px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}[data-reveal]{opacity:1;transform:none}}
+
+    /* A five-point star in the manner of an old ink impression, not a square badge. */
+    .mark{width:44px;height:44px;transform:rotate(-9deg)}
+    .art-middle .star-emblem{width:min(93%,390px);height:auto;transform:rotate(-10deg);filter:drop-shadow(0 11px 0 rgba(0,0,0,.08));flex:none}
+    .art-middle em{font-size:clamp(26px,2.7vw,39px);margin-top:0;transform:rotate(-7deg)}
+    .hero h1{font-size:clamp(76px,9vw,148px);letter-spacing:-.088em}
+    .hero h1 .second{letter-spacing:-.1em}
+    .hero-art{background:linear-gradient(150deg,#10172b 0%,#1a2340 58%,#22335a 100%)}
+    .hero-art:before{border-color:rgba(247,212,141,.5);box-shadow:0 0 0 22px rgba(255,255,255,.02),0 0 0 24px rgba(247,212,141,.2),0 0 0 66px rgba(255,255,255,.02),0 0 0 68px rgba(247,212,141,.1)}
+    @media(max-width:900px){.hero h1{font-size:clamp(80px,12.4vw,120px)}}
+    @media(max-width:670px){.mark{width:36px;height:36px}.hero h1{font-size:clamp(58px,13.8vw,85px)}.art-middle .star-emblem{max-width:280px}}
+    @media(max-width:400px){.hero h1{font-size:clamp(55px,13vw,73px)}}
   </style>
 </head>
 <body>
-  <header id="top">
-    <div class="wrap nav">
-      <a href="#top" class="brand-lockup" aria-label="Stamp Lab, back to top"><span class="mark" aria-hidden="true">SL.</span><span class="brandname">STAMP<b>.</b>LAB</span><span class="brand-sub">An independent practice<br>by London Berry</span></a>
-      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button>
-      <nav class="links" id="navigation" aria-label="Main navigation">
-        <a href="#thinking">The thinking</a><a href="#expertise">Expertise</a><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a class="navcta" href="#contact">Let's talk ↗</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="wrap hero-grid">
-        <div class="hero-main">
-          <div class="hero-top"><span class="smallcaps red">Personal brand / Image / Reputation</span><span class="date">VOL. 001 — EST. 2026</span></div>
-          <h1 id="hero-title"><span>LEAVE</span><span>YOUR</span><span class="second">MARK.</span></h1>
-          <div class="hero-footer">
-            <p>“All press is good press.” But what if you could shape the story before it's told? From the way you speak to the way you show up, I craft the positioning, storytelling, and identity that make an impression last.</p>
-            <a href="#thinking" class="circle-arrow" aria-label="Explore the thinking">↘</a>
-          </div>
-        </div>
-        <div class="hero-art" role="img" aria-label="A red typographic stamp bearing the Stamp Lab name and the words Leave Your Mark">
-          <div class="art-head"><span>STAMP LAB<br>PERSONAL IMAGE DEPT.</span><span>IDENTITY<br>IS INTENTIONAL.</span></div>
-          <div class="art-middle"><strong>SL.</strong><em>Leave your mark.</em></div>
-          <div class="art-foot"><span>Originality, applied.<br>Reputation, considered.</span><b>BY LONDON BERRY</b></div>
-        </div>
-      </div>
-    </section>
-    <div class="ticker" aria-hidden="true"><div class="ticker-roll"><span>MAKE AN IMPRESSION</span><i>✳</i><span>BE KNOWN FOR SOMETHING</span><i>✳</i><span>EVERY DETAIL SPEAKS</span><i>✳</i><span>LEAVE YOUR MARK</span><i>✳</i><span>MAKE AN IMPRESSION</span><i>✳</i><span>BE KNOWN FOR SOMETHING</span><i>✳</i><span>EVERY DETAIL SPEAKS</span><i>✳</i><span>LEAVE YOUR MARK</span><i>✳</i></div></div>
+<header id="top">
+<div class="wrap nav">
+<a aria-label="Stamp, back to top" class="brand-lockup" href="#top"><span aria-hidden="true" class="mark"><svg aria-hidden="true" focusable="false" viewbox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><path d="M 60.0,6.0 L 75.3,39.0 L 111.4,43.3 L 84.7,68.0 L 91.7,103.7 L 60.0,86.0 L 28.3,103.7 L 35.3,68.0 L 8.6,43.3 L 44.7,39.0 Z" fill="#f7d48d" stroke="#b92531" stroke-linejoin="round" stroke-width="3.5"></path><text fill="#1d2233" font-family="Georgia,serif" font-size="48" font-weight="700" text-anchor="middle" x="60" y="72">S</text></svg></span><span class="brandname">STAR<b>.</b>LAB</span><span class="brand-sub">An independent practice<br/>by London Berry</span></a>
+<button aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle" type="button"><span></span><span></span></button>
+<nav aria-label="Main navigation" class="links" id="navigation">
+<a href="#thinking">The thinking</a><a href="#expertise">Expertise</a><a href="#services">Services</a><a href="#work">Work</a><a href="#about">About</a><a class="navcta" href="#contact">Let's talk ↗</a>
+</nav>
+</div>
+</header>
+<main>
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap hero-grid">
+<div class="hero-main">
+<div class="hero-top"><span class="smallcaps red">Personal brand / Image / Reputation</span><span class="date">VOL. 001 — EST. 2026</span></div>
+<h1 id="hero-title"><span>BE</span><span>KNOWN FOR</span><span class="second">SOMETHING.</span></h1>
+<div class="hero-footer">
+<p>“All press is good press.” But what if you could shape the story before it's told? From the way you speak to the way you show up, I craft the positioning, storytelling, and identity that make people remember you for the right things.</p>
+<a aria-label="Explore the thinking" class="circle-arrow" href="#thinking">↘</a>
+</div>
+</div>
+<div aria-label="A celestial editorial panel bearing the Stamp name and the words Be Known for Something" class="hero-art" role="img">
+<div class="art-head"><span>STAMP<br/>PERSONAL IMAGE DEPT.</span><span>IDENTITY<br/>IS INTENTIONAL.</span></div>
+<div class="art-middle"><svg aria-hidden="true" class="star-emblem" focusable="false" viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+<defs><clippath id="hero-star-clip"><path d="M 150.0,15.0 L 186.4,99.8 L 278.4,108.3 L 209.0,169.2 L 229.4,259.2 L 150.0,212.0 L 70.6,259.2 L 91.0,169.2 L 21.6,108.3 L 113.6,99.8 Z"></path></clippath></defs>
+<path d="M 150.0,15.0 L 186.4,99.8 L 278.4,108.3 L 209.0,169.2 L 229.4,259.2 L 150.0,212.0 L 70.6,259.2 L 91.0,169.2 L 21.6,108.3 L 113.6,99.8 Z" fill="#f7d48d" stroke="#bd2431" stroke-linejoin="round" stroke-width="8"></path>
+<g clip-path="url(#hero-star-clip)"><circle cx="78" cy="206" fill="#ad2734" opacity="0.08" r="0.7"></circle><circle cx="124" cy="255" fill="#ad2734" opacity="0.14" r="1.2"></circle><circle cx="239" cy="83" fill="#ad2734" opacity="0.22" r="1.5"></circle><circle cx="142" cy="207" fill="#ad2734" opacity="0.14" r="0.5"></circle><circle cx="173" cy="173" fill="#ad2734" opacity="0.14" r="1.8"></circle><circle cx="234" cy="95" fill="#ad2734" opacity="0.22" r="0.9"></circle><circle cx="127" cy="41" fill="#ad2734" opacity="0.22" r="1.8"></circle><circle cx="157" cy="90" fill="#ad2734" opacity="0.22" r="0.9"></circle><circle cx="98" cy="252" fill="#ad2734" opacity="0.14" r="1.5"></circle><circle cx="35" cy="185" fill="#ad2734" opacity="0.29" r="0.5"></circle><circle cx="71" cy="41" fill="#ad2734" opacity="0.29" r="1.5"></circle><circle cx="46" cy="177" fill="#ad2734" opacity="0.22" r="1.5"></circle><circle cx="60" cy="259" fill="#ad2734" opacity="0.29" r="1.5"></circle><circle cx="69" cy="264" fill="#ad2734" opacity="0.14" r="0.7"></circle><circle cx="97" cy="60" fill="#ad2734" opacity="0.14" r="1.5"></circle><circle cx="211" cy="206" fill="#ad2734" opacity="0.29" r="0.7"></circle><circle cx="240" cy="80" fill="#ad2734" opacity="0.08" r="1.8"></circle><circle cx="133" cy="236" fill="#ad2734" opacity="0.29" r="1.5"></circle><circle cx="279" cy="231" fill="#ad2734" opacity="0.08" r="1.5"></circle><circle cx="222" cy="99" fill="#ad2734" opacity="0.08" r="1.8"></circle><circle cx="142" cy="280" fill="#ad2734" opacity="0.08" r="1.8"></circle><circle cx="177" cy="44" fill="#ad2734" opacity="0.22" r="0.5"></circle><circle cx="29" cy="277" fill="#ad2734" opacity="0.29" r="0.9"></circle><circle cx="146" cy="198" fill="#ad2734" opacity="0.22" r="1.5"></circle><circle cx="74" cy="189" fill="#ad2734" opacity="0.29" r="1.2"></circle><circle cx="157" cy="185" fill="#ad2734" opacity="0.22" r="0.9"></circle><circle cx="194" cy="255" fill="#ad2734" opacity="0.22" r="0.5"></circle><circle cx="142" cy="71" fill="#ad2734" opacity="0.14" r="1.2"></circle><circle cx="265" cy="141" fill="#ad2734" opacity="0.08" r="0.9"></circle><circle cx="60" cy="42" fill="#ad2734" opacity="0.08" r="1.2"></circle><circle cx="189" cy="84" fill="#ad2734" opacity="0.29" r="1.2"></circle><circle cx="77" cy="118" fill="#ad2734" opacity="0.08" r="1.2"></circle><circle cx="118" cy="38" fill="#ad2734" opacity="0.29" r="0.7"></circle><circle cx="168" cy="223" fill="#ad2734" opacity="0.29" r="1.5"></circle><circle cx="78" cy="272" fill="#ad2734" opacity="0.14" r="0.5"></circle><circle cx="71" cy="118" fill="#ad2734" opacity="0.08" r="1.2"></circle><circle cx="261" cy="209" fill="#ad2734" opacity="0.22" r="1.8"></circle><circle cx="43" cy="258" fill="#ad2734" opacity="0.14" r="1.2"></circle><circle cx="45" cy="42" fill="#ad2734" opacity="0.29" r="1.8"></circle><circle cx="186" cy="232" fill="#ad2734" opacity="0.14" r="1.5"></circle><circle cx="191" cy="36" fill="#ad2734" opacity="0.22" r="0.5"></circle><circle cx="177" cy="22" fill="#ad2734" opacity="0.08" r="1.8"></circle><circle cx="180" cy="53" fill="#ad2734" opacity="0.14" r="0.7"></circle><circle cx="52" cy="24" fill="#ad2734" opacity="0.08" r="0.7"></circle><circle cx="116" cy="18" fill="#ad2734" opacity="0.08" r="0.7"></circle><circle cx="28" cy="196" fill="#ad2734" opacity="0.08" r="1.2"></circle><circle cx="119" cy="123" fill="#ad2734" opacity="0.29" r="0.9"></circle><circle cx="70" cy="183" fill="#ad2734" opacity="0.14" r="1.2"></circle><circle cx="275" cy="226" fill="#ad2734" opacity="0.14" r="0.5"></circle><circle cx="34" cy="277" fill="#ad2734" opacity="0.08" r="0.5"></circle><circle cx="207" cy="196" fill="#ad2734" opacity="0.14" r="1.5"></circle><circle cx="89" cy="105" fill="#ad2734" opacity="0.29" r="1.2"></circle><circle cx="181" cy="93" fill="#ad2734" opacity="0.29" r="1.2"></circle><circle cx="159" cy="18" fill="#ad2734" opacity="0.14" r="1.8"></circle><circle cx="125" cy="159" fill="#ad2734" opacity="0.08" r="1.5"></circle><circle cx="23" cy="113" fill="#ad2734" opacity="0.22" r="1.8"></circle><circle cx="231" cy="267" fill="#ad2734" opacity="0.14" r="1.8"></circle><circle cx="203" cy="177" fill="#ad2734" opacity="0.22" r="1.5"></circle><circle cx="141" cy="66" fill="#ad2734" opacity="0.29" r="1.5"></circle><circle cx="151" cy="198" fill="#ad2734" opacity="0.14" r="0.7"></circle><circle cx="175" cy="157" fill="#ad2734" opacity="0.22" r="0.9"></circle><circle cx="94" cy="154" fill="#ad2734" opacity="0.08" r="0.5"></circle><circle cx="238" cy="63" fill="#ad2734" opacity="0.29" r="1.8"></circle><circle cx="210" cy="234" fill="#ad2734" opacity="0.08" r="1.5"></circle><circle cx="120" cy="162" fill="#ad2734" opacity="0.29" r="1.8"></circle></g>
+<text fill="#1d2233" font-family="Georgia,serif" font-size="116" font-weight="700" text-anchor="middle" x="150" y="178">S</text>
+</svg><em>Be known for something.</em></div>
+<div class="art-foot"><span>Originality, applied.<br/>Reputation, considered.</span><b>BY LONDON BERRY</b></div>
+</div>
+</div>
+</section>
+<div aria-hidden="true" class="ticker"><div class="ticker-roll"><span>BE KNOWN FOR SOMETHING</span><i>✳</i><span>MAKE YOUR NAME MEAN SOMETHING</span><i>✳</i><span>EVERY DETAIL SPEAKS</span><i>✳</i><span>IMAGE IS A SIGNAL</span><i>✳</i><span>BE KNOWN FOR SOMETHING</span><i>✳</i><span>MAKE YOUR NAME MEAN SOMETHING</span><i>✳</i><span>EVERY DETAIL SPEAKS</span><i>✳</i><span>IMAGE IS A SIGNAL</span><i>✳</i></div></div>
+<section aria-labelledby="thinking-title" class="section" id="thinking">
+<div class="wrap">
+<div class="section-rule"><span class="section-label"><span class="number">01</span> The thinking</span><span class="section-side">More than a pretty page</span></div>
+<div class="philosophy-body">
+<h2 class="display" data-reveal="" id="thinking-title">10 or<br/><em>10,000,000</em><br/>followers?<br/>Make it count.</h2>
+<div class="philosophy-text" data-reveal="">
+<p class="lead">You're not just a person. You're the sum of your parts.</p>
+<p>Your colour palette. Your point of view. Your words, your decisions, and the idea other people have of you. Whether you're on a stage or in a boardroom, every choice leaves an impression.</p>
+<p>Stamp brings those choices together into a public identity that's recognizable, deliberate, and still unmistakably you.</p>
+<div class="formula">Perception isn't everything.<br/>But it changes how everything is perceived.</div>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="expertise-title" class="section expertise" id="expertise">
+<div class="wrap">
+<div class="section-rule"><span class="section-label"><span class="number">02</span> What I do</span><span class="section-side">Identity takes intention</span></div>
+<div class="expertise-lead"><h2 class="display" data-reveal="" id="expertise-title">The image.<br/><em>The impact.</em></h2><p data-reveal="">For founders, independent professionals, and creators. For people who have something to say.</p></div>
+<div class="competencies">
+<article class="competency" data-reveal=""><div class="competency-top"><span>THE DISCIPLINE / 01</span><b>✳</b></div><div><h3>Positioning &amp;<br/>Reputation</h3><p>What you stand for, how you're perceived, and what people remember when your name comes up.</p></div></article>
+<article class="competency" data-reveal=""><div class="competency-top"><span>THE DISCIPLINE / 02</span><b>✳</b></div><div><h3>Voice &amp;<br/>Messaging</h3><p>Bios, statements, posts, public responses, and ghostwriting. Not just what to say—but how to sound like yourself.</p></div></article>
+<article class="competency" data-reveal=""><div class="competency-top"><span>THE DISCIPLINE / 03</span><b>✳</b></div><div><h3>Visual Identity &amp;<br/>Presence</h3><p>Colours, personal aesthetic, styling references, art direction, and the visual codes that make you recognizable.</p></div></article>
+<article class="competency" data-reveal=""><div class="competency-top"><span>THE DISCIPLINE / 04</span><b>✳</b></div><div><h3>Editorial &amp;<br/>Brand Direction</h3><p>The stories worth telling, how to tell them, and how to sustain a coherent identity across channels and moments.</p></div></article>
+</div>
+</div>
+</section><section aria-labelledby="services-title" class="section packages" id="services">
+<div class="wrap">
+<div class="section-rule"><span class="section-label"><span class="number">03</span> The services</span><span class="section-side">For individuals who mean business</span></div>
+<div class="packages-intro"><h2 class="display" data-reveal="" id="services-title">Put your name<br/><em>to work.</em></h2><p data-reveal="">Start with the foundations, reinvent your public presence, or work with me on the choices that shape your image over time.</p></div>
+<div class="package-grid">
+<article class="package" data-reveal="">
+<div class="pkg-top"><span>01 / Strategy</span></div>
+<h3>The Brand<br/>Bible</h3>
+<div class="price">$750 <small>USD / starting at</small></div>
+<p class="pkg-description">For someone ready to be known for something.</p>
+<ul><li>Brand discovery 1-on-1</li><li>Positioning &amp; reputation direction</li><li>Voice &amp; messaging guidelines</li><li>Visual direction board</li><li>30-day editorial direction</li><li>Ongoing support and follow-ups</li></ul>
+<a aria-label="Enquire by email about The Brand Bible" class="link-underline" href="mailto:berrylondon579@gmail.com?subject=Stamp%20%E2%80%94%20The%20Brand%20Bible%20Inquiry">Enquire by email <span>↗</span></a>
+</article>
+<article class="package featured" data-reveal="">
+<div class="pkg-top"><span>02 / Reinvention</span><span class="flag">Most comprehensive project</span></div>
+<h3>The Image<br/>Resurrection</h3>
+<div class="price">$1,000 <small>USD / starting at</small></div>
+<p class="pkg-description">A complete strategic and editorial refresh of your existing public presence.</p>
+<ul><li>Everything in The Brand Bible</li><li>Social profile &amp; biography rewrite</li><li>Six ghostwritten sample posts</li><li>Personal visual identity guide</li><li>Launch &amp; implementation plan</li></ul>
+<a aria-label="Enquire by email about The Image Resurrection" class="link-underline" href="mailto:berrylondon579@gmail.com?subject=Stamp%20%E2%80%94%20The%20Image%20Resurrection%20Inquiry">Enquire by email <span>↗</span></a>
+</article>
+<article class="package" data-reveal="">
+<div class="pkg-top"><span>03 / Partnership</span></div>
+<h3>Ongoing Brand<br/>Direction</h3>
+<div class="price">$2,000 <small>USD / month, starting at</small></div>
+<p class="pkg-description">A strategic partner for maintaining and evolving your public image.</p>
+<ul><li>Monthly editorial strategy</li><li>Eight ghostwritten posts per month</li><li>Messaging &amp; positioning guidance</li><li>One monthly review call</li><li>Ongoing brand consistency</li></ul>
+<a aria-label="Enquire by email about Ongoing Brand Direction" class="link-underline" href="mailto:berrylondon579@gmail.com?subject=Stamp%20%E2%80%94%20Ongoing%20Brand%20Direction%20Inquiry">Enquire by email <span>↗</span></a>
+</article>
+</div>
+<p class="package-note">Starting prices in USD. Deliverables, timelines, and follow-up support are confirmed together before work begins. The scope of an engagement determines the final quote.</p>
+</div>
+</section>
+<section aria-labelledby="work-title" class="section" id="work">
+<div class="wrap">
+<div class="section-rule"><span class="section-label"><span class="number">04</span> A brand in practice</span><span class="section-side">Self-directed work</span></div>
+<div class="work-summary"><h2 class="display" data-reveal="" id="work-title">Proof of<br/><em>personality.</em></h2><p data-reveal="">A glimpse of how I think about identity, applied to the one name I've spent the most time developing: my own.</p></div>
+<div class="work-layout">
+<div class="work-art"><div class="top"><span>PERSONAL BRAND STUDY / 001</span><span>2026</span></div><div class="word">London<br/>Berry.</div><div class="bottom"><span>PERSONALITY, NOT POLISH</span><span>STAMPED / ORIGINAL</span></div></div>
+<div class="work-text" data-reveal="">
+<span class="tag">London Berry / Personal brand</span>
+<h3>A little charm.<br/>A little chaos.</h3>
+<p>A personal creative presence built around fun, relatability, clumsiness, and sexiness.</p>
+<div class="work-attributes"><span>Fun</span><span>Relatable</span><span>Clumsy</span><span>Sexy</span></div>
+<div class="work-note">An independent study of my own public-facing creative identity—not a commissioned client project or a claim of client results.</div>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="approach-title" class="section method" id="approach">
+<div class="wrap">
+<div class="section-rule"><span class="section-label"><span class="number">05</span> The approach</span><span class="section-side">Less guesswork. More direction.</span></div>
+<div class="method-head"><h2 class="display" data-reveal="" id="approach-title">Good image.<br/><em>Good intention.</em></h2><p data-reveal="">People are not blank canvases. There's already something worth noticing. I start there.</p></div>
+<div class="method-steps">
+<div class="step" data-reveal=""><span class="num">01.</span><h3>Look closer.</h3><p>Understand the person, their ambitions, and the impression they're making now.</p></div>
+<div class="step" data-reveal=""><span class="num">02.</span><h3>Find the angle.</h3><p>Define a position, voice, aesthetic, and reputation worth building.</p></div>
+<div class="step" data-reveal=""><span class="num">03.</span><h3>Make it stick.</h3><p>Turn the strategy into clear writing, useful guidelines, and repeatable choices.</p></div>
+</div>
+</div>
+</section>
 
-    <section class="section" id="thinking" aria-labelledby="thinking-title">
-      <div class="wrap">
-        <div class="section-rule"><span class="section-label"><span class="number">01</span> The thinking</span><span class="section-side">More than a moodboard</span></div>
-        <div class="philosophy-body">
-          <h2 class="display" id="thinking-title" data-reveal>10 or<br><em>10,000,000</em><br>followers?<br>Make it count.</h2>
-          <div class="philosophy-text" data-reveal>
-            <p class="lead">You're not just a person. You're the sum of your parts.</p>
-            <p>Your colour palette. Your point of view. Your words, your decisions, and the idea other people have of you. Whether you're on a stage or in a boardroom, every choice leaves an impression.</p>
-            <p>Stamp Lab brings those choices together into a public identity that's recognizable, deliberate, and still unmistakably you.</p>
-            <div class="formula">Perception isn't everything.<br>But it changes how everything is perceived.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section expertise" id="expertise" aria-labelledby="expertise-title">
-      <div class="wrap">
-        <div class="section-rule"><span class="section-label"><span class="number">02</span> What I do</span><span class="section-side">Identity takes intention</span></div>
-        <div class="expertise-lead"><h2 class="display" id="expertise-title" data-reveal>The image.<br><em>The impact.</em></h2><p data-reveal>For founders, independent professionals, and creators. For people who have something to say.</p></div>
-        <div class="competencies">
-          <article class="competency" data-reveal><div class="competency-top"><span>THE DISCIPLINE / 01</span><b>✳</b></div><div><h3>Positioning &<br>Reputation</h3><p>What you stand for, how you're perceived, and what people remember when your name comes up.</p></div></article>
-          <article class="competency" data-reveal><div class="competency-top"><span>THE DISCIPLINE / 02</span><b>✳</b></div><div><h3>Voice &<br>Messaging</h3><p>Bios, statements, posts, public responses, and ghostwriting. Not just what to say—but how to sound like yourself.</p></div></article>
-          <article class="competency" data-reveal><div class="competency-top"><span>THE DISCIPLINE / 03</span><b>✳</b></div><div><h3>Visual Identity &<br>Presence</h3><p>Colours, personal aesthetic, styling references, art direction, and the visual codes that make you recognizable.</p></div></article>
-          <article class="competency" data-reveal><div class="competency-top"><span>THE DISCIPLINE / 04</span><b>✳</b></div><div><h3>Editorial &<br>Brand Direction</h3><p>The stories worth telling, how to tell them, and how to sustain a coherent identity across channels and moments.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="work" aria-labelledby="work-title">
-      <div class="wrap">
-        <div class="section-rule"><span class="section-label"><span class="number">03</span> A brand in practice</span><span class="section-side">Self-directed work</span></div>
-        <div class="work-summary"><h2 class="display" id="work-title" data-reveal>Proof of<br><em>personality.</em></h2><p data-reveal>A glimpse of how I think about identity, applied to the one name I've spent the most time developing: my own.</p></div>
-        <div class="work-layout">
-          <div class="work-art"><div class="top"><span>PERSONAL BRAND STUDY / 001</span><span>2026</span></div><div class="word">London<br>Berry.</div><div class="bottom"><span>PERSONALITY, NOT POLISH</span><span>STAMPED / ORIGINAL</span></div></div>
-          <div class="work-text" data-reveal>
-            <span class="tag">London Berry / Personal brand</span>
-            <h3>A little charm.<br>A little chaos.</h3>
-            <p>A personal creative presence built around fun, relatability, clumsiness, and sexiness.</p>
-            <div class="work-attributes"><span>Fun</span><span>Relatable</span><span>Clumsy</span><span>Sexy</span></div>
-            <div class="work-note">An independent study of my own public-facing creative identity—not a commissioned client project or a claim of client results.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section method" id="approach" aria-labelledby="approach-title">
-      <div class="wrap">
-        <div class="section-rule"><span class="section-label"><span class="number">04</span> The approach</span><span class="section-side">Less guesswork. More direction.</span></div>
-        <div class="method-head"><h2 class="display" id="approach-title" data-reveal>Good image.<br><em>Good intention.</em></h2><p data-reveal>People are not blank canvases. There's already something worth noticing. I start there.</p></div>
-        <div class="method-steps">
-          <div class="step" data-reveal><span class="num">01.</span><h3>Look closer.</h3><p>Understand the person, their ambitions, and the impression they're making now.</p></div>
-          <div class="step" data-reveal><span class="num">02.</span><h3>Find the angle.</h3><p>Define a position, voice, aesthetic, and reputation worth building.</p></div>
-          <div class="step" data-reveal><span class="num">03.</span><h3>Make it stick.</h3><p>Turn the strategy into clear writing, useful guidelines, and repeatable choices.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section packages" id="services" aria-labelledby="services-title">
-      <div class="wrap">
-        <div class="section-rule"><span class="section-label"><span class="number">05</span> The services</span><span class="section-side">For individuals who mean business</span></div>
-        <div class="packages-intro"><h2 class="display" id="services-title" data-reveal>Put your name<br><em>to work.</em></h2><p data-reveal>Start with the foundations, reinvent your public presence, or work with me on the choices that shape your image over time.</p></div>
-        <div class="package-grid">
-          <article class="package" data-reveal>
-            <div class="pkg-top"><span>01 / Strategy</span></div>
-            <h3>The Brand<br>Bible</h3>
-            <div class="price">$750 <small>USD / starting at</small></div>
-            <p class="pkg-description">For someone ready to be known for something.</p>
-            <ul><li>Brand discovery 1-on-1</li><li>Positioning & reputation direction</li><li>Voice & messaging guidelines</li><li>Visual direction board</li><li>30-day editorial direction</li><li>Ongoing support and follow-ups</li></ul>
-            <a class="link-underline" href="mailto:berrylondon579@gmail.com?subject=Stamp%20Lab%20%E2%80%94%20The%20Brand%20Bible%20Inquiry" aria-label="Enquire by email about The Brand Bible">Enquire by email <span>↗</span></a>
-          </article>
-          <article class="package featured" data-reveal>
-            <div class="pkg-top"><span>02 / Reinvention</span><span class="flag">Most comprehensive project</span></div>
-            <h3>The Image<br>Resurrection</h3>
-            <div class="price">$1,000 <small>USD / starting at</small></div>
-            <p class="pkg-description">A complete strategic and editorial refresh of your existing public presence.</p>
-            <ul><li>Everything in The Brand Bible</li><li>Social profile & biography rewrite</li><li>Six ghostwritten sample posts</li><li>Personal visual identity guide</li><li>Launch & implementation plan</li></ul>
-            <a class="link-underline" href="mailto:berrylondon579@gmail.com?subject=Stamp%20Lab%20%E2%80%94%20The%20Image%20Resurrection%20Inquiry" aria-label="Enquire by email about The Image Resurrection">Enquire by email <span>↗</span></a>
-          </article>
-          <article class="package" data-reveal>
-            <div class="pkg-top"><span>03 / Partnership</span></div>
-            <h3>Ongoing Brand<br>Direction</h3>
-            <div class="price">$2,000 <small>USD / month, starting at</small></div>
-            <p class="pkg-description">A strategic partner for maintaining and evolving your public image.</p>
-            <ul><li>Monthly editorial strategy</li><li>Eight ghostwritten posts per month</li><li>Messaging & positioning guidance</li><li>One monthly review call</li><li>Ongoing brand consistency</li></ul>
-            <a class="link-underline" href="mailto:berrylondon579@gmail.com?subject=Stamp%20Lab%20%E2%80%94%20Ongoing%20Brand%20Direction%20Inquiry" aria-label="Enquire by email about Ongoing Brand Direction">Enquire by email <span>↗</span></a>
-          </article>
-        </div>
-        <p class="package-note">Starting prices in USD. Deliverables, timelines, and follow-up support are confirmed together before work begins. The scope of an engagement determines the final quote.</p>
-      </div>
-    </section>
-
-    <section class="section about" id="about" aria-labelledby="about-title">
-      <div class="wrap">
-        <div class="section-rule"><span class="section-label"><span class="number">06</span> Behind the stamp</span><span class="section-side">One person. Many ideas.</span></div>
-        <div class="about-layout">
-          <div class="about-poster" role="img" aria-label="Stamp Lab monogram LB in red ink against charcoal"><span class="over">STAMP LAB / BY LONDON BERRY</span><strong>LB.</strong><span class="under">Independent in thought.<br>Intentional in execution.</span></div>
-          <div data-reveal>
-            <h2 id="about-title">A studio of one.<br><em>For now.</em></h2>
-            <p>I'm London Berry: a writer, creative strategist, and a person who pays an unreasonable amount of attention to how people present themselves.</p>
-            <p>How they speak. What they wear. The colours they choose. How they react under pressure. The difference between a personality and a persona. I bring those observations into brand strategy, reputation, writing, and visual direction.</p>
-            <p>Stamp Lab is my independent practice. No imaginary team, no agency theatre—just a point of view and the work to back it up.</p>
-            <div class="about-facts"><div><span>Base</span><strong>Colombia · Remote worldwide</strong></div><div><span>Languages</span><strong>English · Spanish · French · Italian</strong></div></div>
-            <a class="link-underline" href="https://medium.com/@londonberry" target="_blank" rel="noopener noreferrer">Read my writing <span>↗</span></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="wrap">
-        <div class="section-rule"><span class="section-label"><span class="number">07</span> Let's talk</span><span class="section-side">Now accepting enquiries</span></div>
-        <h2 id="contact-title" data-reveal>Your name is<br>your <em>most important</em><br>brand.</h2>
-        <div class="contact-layout" data-reveal><p>Got something to say?<br>Let's make sure people remember it.</p><a class="contact-button" href="mailto:berrylondon579@gmail.com?subject=Stamp%20Lab%20%E2%80%94%20Personal%20Brand%20Inquiry">Contact me by email <span>↗</span></a></div>
-      </div>
-    </section>
-  </main>
-  <footer><div class="wrap footer"><a href="#top"><strong>STAMP.LAB</strong></a><div class="footlinks"><a href="#services">Services</a><a href="mailto:berrylondon579@gmail.com?subject=Stamp%20Lab%20%E2%80%94%20Personal%20Brand%20Inquiry">Email</a><a href="https://www.instagram.com/lndnberry/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://medium.com/@londonberry" target="_blank" rel="noopener noreferrer">Medium</a><a href="https://london-berry-creative.londonberry.chatgpt.site/" target="_blank" rel="noopener noreferrer">Writing portfolio</a></div><small>© <span id="year">2026</span> Stamp Lab by London Berry</small></div></footer>
-  <script>
+<section aria-labelledby="about-title" class="section about" id="about">
+<div class="wrap">
+<div class="section-rule"><span class="section-label"><span class="number">06</span> Behind the studio</span><span class="section-side">One person. Many ideas.</span></div>
+<div class="about-layout">
+<div aria-label="Stamp monogram LB in blue and gold against charcoal" class="about-poster" role="img"><span class="over">STAMP / BY LONDON BERRY</span><strong>LB.</strong><span class="under">Independent in thought.<br/>Intentional in execution.</span></div>
+<div data-reveal="">
+<h2 id="about-title">A studio of one.<br/><em>For now.</em></h2>
+<p>I'm London Berry: a writer, creative strategist, and a person who pays an unreasonable amount of attention to how people present themselves.</p>
+<p>How they speak. What they wear. The colours they choose. How they react under pressure. The difference between a personality and a persona. I bring those observations into brand strategy, reputation, writing, and visual direction.</p>
+<p>Stamp is my independent practice. No imaginary team, no agency theatre—just a point of view and the work to back it up.</p>
+<div class="about-facts"><div><span>Base</span><strong>Colombia · Remote worldwide</strong></div><div><span>Languages</span><strong>English · Spanish · French · Italian</strong></div></div>
+<a class="link-underline" href="https://medium.com/@londonberry" rel="noopener noreferrer" target="_blank">Read my writing <span>↗</span></a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="contact-title" class="contact" id="contact">
+<div class="wrap">
+<div class="section-rule"><span class="section-label"><span class="number">07</span> Let's talk</span><span class="section-side">Now accepting enquiries</span></div>
+<h2 data-reveal="" id="contact-title">Your name is<br/>your <em>most important</em><br/>brand.</h2>
+<div class="contact-layout" data-reveal=""><p>Got something to say?<br/>Let's make sure people remember it.</p><a class="contact-button" href="mailto:berrylondon579@gmail.com?subject=Stamp%20%E2%80%94%20Personal%20Brand%20Inquiry">Contact me by email <span>↗</span></a></div>
+</div>
+</section>
+</main>
+<footer><div class="wrap footer"><a href="#top"><strong>STAMP</strong></a><div class="footlinks"><a href="#services">Services</a><a href="mailto:berrylondon579@gmail.com?subject=Stamp%20%E2%80%94%20Personal%20Brand%20Inquiry">Email</a><a href="https://www.instagram.com/lndnberry/" rel="noopener noreferrer" target="_blank">Instagram</a><a href="https://medium.com/@londonberry" rel="noopener noreferrer" target="_blank">Medium</a><a href="https://london-berry-creative.londonberry.chatgpt.site/" rel="noopener noreferrer" target="_blank">Writing portfolio</a></div><small>© <span id="year">2026</span> Stamp by London Berry</small></div></footer>
+<script>
     document.getElementById('year').textContent = new Date().getFullYear();
     const toggle=document.querySelector('.menu-toggle'),nav=document.getElementById('navigation');
     function closeMenu(){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');document.body.classList.remove('menu-open')}
@@ -318,7 +327,7 @@
     if('IntersectionObserver' in window&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
       const obs=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('in');obs.unobserve(entry.target)}}),{threshold:.08});
       document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el));
-    }else{document.querySelectorAll('[data-reveal]').forEach(el=>el.classList.add('in')}
+    }else{document.querySelectorAll('[data-reveal]').forEach(el=>el.classList.add('in'))}
   </script>
 </body>
 </html>
